@@ -1,0 +1,10 @@
+.order-section {
+    background: url(../../img/hero/order/orderbg.png) center top / cover no-repeat;
+    color: #fff;
+    height: rem(652px);
+
+    @include tablets {
+        height: 966px;
+    }
+    
+}

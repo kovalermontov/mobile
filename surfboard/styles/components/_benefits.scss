@@ -1,0 +1,59 @@
+.benefits {
+
+}
+
+.benefits__list {
+    display: flex;
+    margin-top: rem(49px);
+    justify-content: center;
+    display: flex;
+    
+    @include phones {
+    flex-direction: column;
+}
+
+
+}
+
+.benefits__item {
+    flex: 1;
+    position: relative;
+
+    
+
+    &:before {
+        content: url("../../img/benefit/shape.png");
+        position: absolute;
+        top: rem(30px);
+        right: rem(-30px);
+        transform: translateХ(50%);
+
+        
+        @include tablets {
+            display: none;
+        }
+        @include phones {
+            display: none;
+        
+        }
+
+    }
+
+    &:first-child {
+        padding-left: rem(67px);
+        @include tablets {
+            padding: 0;
+        }
+    }
+
+    &:last-child {
+        padding-right: rem(67px);
+        @include tablets {
+            padding: 0;
+        }
+
+        &::before{
+            display: none;
+        }
+    }
+}
